@@ -1,0 +1,75 @@
+body {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-flow: column;
+  color: white;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(3, 3, 50);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    &.top {
+      margin-top: 80px;
+    }
+    .left {
+      p {
+        color: rgb(140, 137, 151);
+        margin-top: 40px;
+        max-width: 280px;
+      }
+    }
+    .right {
+      display: flex;
+      gap: 60px;
+      justify-content: space-between;
+      ul {
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        color: white;
+        list-style: none;
+        li {
+          max-width: 250px;
+          a {
+            color: rgb(140, 137, 151);
+            text-decoration: none;
+          }
+          p {
+            color: rgb(140, 137, 151);
+            span {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    &.bottom {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left {
+        color: rgb(140, 137, 151);
+      }
+      .logos {
+        ul {
+          display: flex;
+          margin: auto 0;
+          gap: 30px;
+          li {
+            list-style: none;
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .line {
+    border: 1px solid rgb(19, 19, 63);
+    width: 100%;
+  }
+}
