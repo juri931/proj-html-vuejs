@@ -1,7 +1,15 @@
-<script></script>
+<script>
+import Header from "./components/partials/Header.vue";
+import Main from "./components/partials/Main.vue";
+import Footer from "./components/partials/Footer.vue";
+</script>
 
 <template>
-  <div>Hi</div>
+  <Header />
+  <Main />
+  <Footer />
 </template>
 
-<style scoped></style>
+<style lang="scss">
+@import "./assets/scss/main.scss";
+</style>
