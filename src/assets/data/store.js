@@ -1,22 +1,31 @@
 const headerMenu = {
   list: [
     {
-      text: '<li><a id="home">Home</a></li>',
+      text: "Home",
+      href: "#",
+      id: "home",
     },
     {
-      text: "<li><a>About</a></li>",
+      text: "About",
+      href: "#",
     },
     {
-      text: "<li><a>Services</a></li>",
+      text: "Services",
+      href: "#",
     },
     {
-      text: "<li><a>Blog</a></li>",
+      text: "Blog",
+      href: "#",
     },
     {
-      text: "<li><a>Contacts</a></li>",
+      text: "Contacts",
+      href: "#",
     },
     {
-      text: "<li><a class='btn' id='sign-in' href='#'>Sign In</a></li>",
+      text: "Sign In",
+      href: "#",
+      id: "sign-in",
+      class: "btn",
     },
   ],
 };
@@ -87,4 +96,4 @@ const socials = {
     },
   ],
 };
-export default { headerMenu, footerMenu, socials };
+export { headerMenu, footerMenu, socials };
