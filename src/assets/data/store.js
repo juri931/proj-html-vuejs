@@ -75,16 +75,19 @@ const footerMenu = {
   ],
   col3: [
     {
-      text: "<li>Contact Us</li>",
+      text: "Contact Us",
     },
     {
-      text: "<li><p><span>Address: </span> Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, Tx 76051</p></li>",
+      type: "Address: ",
+      span: "Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, Tx 76051",
     },
     {
-      text: "<li><p><span>Phone: </span>+99 (0) 101 0000 888</p></li>",
+      type: "Phone: ",
+      span: "+99 (0) 101 0000 888",
     },
     {
-      text: "<li><p><span>Email: </span>info@yourdomain.com</p></li>",
+      type: "Email: ",
+      span: "info@yourdomain.com",
     },
   ],
 };

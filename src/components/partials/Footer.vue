@@ -50,19 +50,15 @@ export default {
         </ul>
 
         <ul>
-          <!-- <li>Contact Us</li>
-          <li>
+          <li v-for="(item, index) in col3" :key="index">
+            {{ item.text }}
             <p>
-              <span>Address: </span> Patricia C. Amedee 4401 Waldeck Street
-              Grapevine Nashville, Tx 76051
+              {{ item.type }}
+              <span>
+                {{ item.span }}
+              </span>
             </p>
           </li>
-          <li>
-            <p><span>Phone: </span>+99 (0) 101 0000 888</p>
-          </li>
-          <li>
-            <p><span>Email: </span>info@yourdomain.com</p>
-          </li> -->
         </ul>
       </div>
     </div>
