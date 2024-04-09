@@ -1,5 +1,20 @@
 <script>
-export default {};
+import { card } from "../../assets/data/cards";
+export default {
+  data() {
+    return {
+      card,
+    };
+  },
+  computed: {
+    cardProps() {
+      return card.props;
+    },
+  },
+  mounted() {
+    console.log(card.props);
+  },
+};
 </script>
 
 <template>
@@ -35,12 +50,12 @@ export default {};
       </div>
 
       <div class="main container">
-        <!-- TODO: remove style -->
-        <ul style="font-size: 60px; list-style: none">
-          <div>CARD</div>
-          <div>CARD</div>
-          <div>CARD</div>
-          <div>CARD</div>
+        <ul>
+          <div v-for="(item, index) in cardProps" :key="index" class="card row">
+            <img class="col" :src="item.img" />
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.desc }}</p>
+          </div>
         </ul>
       </div>
 
