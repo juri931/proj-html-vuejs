@@ -6,9 +6,9 @@ body {
       to bottom,
       rgb(10, 25, 82),
       50%,
-      rgb(6, 13, 66),
+      rgb(5, 10, 52),
       100%,
-      rgb(0, 0, 42)
+      rgb(0, 0, 17)
     );
     .container {
       margin-bottom: 120px;
@@ -42,9 +42,9 @@ body {
               to left,
               rgb(255, 101, 108),
               50%,
-              rgb(211, 64, 109),
+              rgb(166, 49, 84),
               100%,
-              rgb(151, 31, 101)
+              rgb(151, 32, 101)
             );
             &:hover {
               box-shadow: 0 5px 10px 5px rgba(255, 101, 109, 0.2);
@@ -56,9 +56,9 @@ body {
               to right,
               rgb(3, 159, 203),
               50%,
-              rgb(15, 103, 154),
+              rgb(13, 89, 133),
               100%,
-              rgb(32, 63, 132)
+              rgb(26, 52, 108)
             );
             &:hover {
               box-shadow: 0 5px 10px 5px rgba(rgb(3, 159, 203), 0.2);
