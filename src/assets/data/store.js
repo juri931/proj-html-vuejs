@@ -33,16 +33,19 @@ const headerMenu = {
 const footerMenu = {
   col1: [
     {
-      text: "<li>Quick Links</li>",
+      text: "Quick Links",
     },
     {
-      text: "<li><a ref='#'>Services</a></li>",
+      link: "Services",
+      href: "#",
     },
     {
-      text: "<li><a href='#'>Contact</a></li>",
+      link: "Contact",
+      href: "#",
     },
     {
-      text: "<li><a href='#'>Blog</a></li>",
+      link: "Blog",
+      href: "#",
     },
   ],
   col2: [
@@ -80,6 +83,7 @@ const footerMenu = {
     },
   ],
 };
+
 const socials = {
   logos: [
     {
@@ -96,4 +100,5 @@ const socials = {
     },
   ],
 };
+
 export { headerMenu, footerMenu, socials };

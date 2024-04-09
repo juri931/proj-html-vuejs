@@ -1,5 +1,26 @@
 <script>
-export default {};
+import { footerMenu, socials } from "../../assets/data/store";
+export default {
+  data() {
+    return {
+      footerMenu,
+    };
+  },
+  computed: {
+    col1() {
+      return this.footerMenu.col1;
+    },
+    col2() {
+      return this.footerMenu.col2;
+    },
+    col3() {
+      return this.footerMenu.col3;
+    },
+  },
+  mounted() {
+    console.log(footerMenu);
+  },
+};
 </script>
 
 <template>
@@ -14,12 +35,12 @@ export default {};
       </div>
 
       <div class="right col-8">
-        <!-- <ul>
-          <li>Quick Links</li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Blog</a></li>
-        </ul> -->
+        <ul>
+          <li v-for="(item, index) in col1" :key="index">
+            {{ item.text }}
+            <a :href="item.href" :id="item.id">{{ item.link }}</a>
+          </li>
+        </ul>
 
         <ul>
           <!-- <li>Resources</li>
