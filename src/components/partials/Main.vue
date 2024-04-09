@@ -55,6 +55,9 @@ export default {
             <img class="col" :src="item.img" />
             <h4>{{ item.title }}</h4>
             <p>{{ item.desc }}</p>
+            <a class="btn" href="#">
+              <i class="fa fa-arrow-right"></i>
+            </a>
           </div>
         </ul>
       </div>

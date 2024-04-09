@@ -99,11 +99,52 @@ body {
           text-align: center;
           .card {
             display: flex;
+            padding-top: 120px;
+            width: 300px;
+            position: relative;
             border: none;
             align-items: center;
+            &:hover {
+              color: white;
+              background: linear-gradient(
+                to bottom,
+                rgb(15, 37, 125),
+                50%,
+                rgb(7, 13, 70),
+                100%,
+                rgb(0, 0, 57)
+              );
+              .btn {
+                display: block;
+                position: absolute;
+                color: white;
+                top: 254px;
+                width: max-content;
+                border-radius: 50%;
+                border: none;
+                padding: 10px 15px;
+                background: linear-gradient(
+                  to left,
+                  rgb(255, 101, 108),
+                  50%,
+                  rgb(166, 49, 84),
+                  100%,
+                  rgb(151, 32, 101)
+                );
+              }
+              border-radius: 20px;
+              box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
+              img {
+                background-color: white;
+                border-radius: 20px;
+                box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
+              }
+            }
             img {
-              max-width: 60%;
-              margin-bottom: 45px;
+              position: absolute;
+              bottom: 170px;
+              padding: 30px;
+              max-width: 192px;
             }
             h4 {
               font-size: 20px;
@@ -116,6 +157,10 @@ body {
             p {
               max-width: 192px;
               font-size: 12px;
+              margin-bottom: 40px;
+            }
+            .btn {
+              display: none;
             }
           }
         }
