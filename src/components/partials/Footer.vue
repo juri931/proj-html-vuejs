@@ -38,17 +38,15 @@ export default {
         <ul>
           <li v-for="(item, index) in col1" :key="index">
             {{ item.text }}
-            <a :href="item.href" :id="item.id">{{ item.link }}</a>
+            <a :href="item.href">{{ item.link }}</a>
           </li>
         </ul>
 
         <ul>
-          <!-- <li>Resources</li>
-          <li><a href="">Art Design</a></li>
-          <li><a href="">Computer</a></li>
-          <li><a href="">IT News</a></li>
-          <li><a href="">Networking</a></li>
-          <li><a href="">Web Security</a></li> -->
+          <li v-for="(item, index) in col2" :key="index">
+            {{ item.text }}
+            <a :href="item.href">{{ item.link }}</a>
+          </li>
         </ul>
 
         <ul>

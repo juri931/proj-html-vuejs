@@ -50,22 +50,27 @@ const footerMenu = {
   ],
   col2: [
     {
-      text: "<li>Resources</li>",
+      text: "Resources",
     },
     {
-      text: "<li><a href='#'>Art Design</a></li>",
+      link: "Art Design",
+      href: "#",
     },
     {
-      text: "<li><a href='#'>Computer</a></li>",
+      link: "Computer",
+      href: "#",
     },
     {
-      text: "<li><a href='#'>IT News</a></li>",
+      link: "IT News",
+      href: "#",
     },
     {
-      text: "<li><a href='#'>Networking</a></li>",
+      link: "Networking",
+      href: "#",
     },
     {
-      text: "<li><a href='#'>Web Security</a></li>",
+      link: "Web Security",
+      href: "#",
     },
   ],
   col3: [
