@@ -4,6 +4,7 @@ export default {
   data() {
     return {
       footerMenu,
+      socials,
     };
   },
   computed: {
@@ -16,9 +17,13 @@ export default {
     col3() {
       return this.footerMenu.col3;
     },
+    addLogos() {
+      return this.socials.logos;
+    },
   },
   mounted() {
     console.log(footerMenu);
+    console.log(socials);
   },
 };
 </script>
@@ -70,18 +75,11 @@ export default {
 
       <div class="logos">
         <ul>
-          <!-- <li>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <li v-for="(item, index) in addLogos" :key="index">
+            <a :href="item.href">
+              <i :class="item.text"></i>
+            </a>
           </li>
-          <li>
-            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-          </li> -->
         </ul>
       </div>
     </div>

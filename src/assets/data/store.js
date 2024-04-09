@@ -95,16 +95,20 @@ const footerMenu = {
 const socials = {
   logos: [
     {
-      text: '<li><a href=""><i class="fa-brands fa-instagram"></i></a></li>',
+      text: "fa-brands fa-instagram",
+      href: "#",
     },
     {
-      text: '<li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>',
+      text: "fa-brands fa-linkedin-in",
+      href: "#",
     },
     {
-      text: '<li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>',
+      text: "fa-brands fa-facebook-f",
+      href: "#",
     },
     {
-      text: '<li><a href=""><i class="fa-brands fa-twitter"></i></a></li>',
+      text: "fa-brands fa-twitter",
+      href: "#",
     },
   ],
 };
