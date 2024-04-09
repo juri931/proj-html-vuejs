@@ -1,3 +1,77 @@
 body {
   font-family: "Roboto", sans-serif;
+  .sect-1 {
+    display: flex;
+    background: linear-gradient(
+      to bottom,
+      rgb(10, 25, 82),
+      50%,
+      rgb(6, 13, 66),
+      100%,
+      rgb(0, 0, 42)
+    );
+    .container {
+      margin-bottom: 120px;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        color: white;
+        max-width: 340px;
+        h1 {
+          font-weight: 600;
+        }
+        h2 {
+          font-size: 40px;
+        }
+        p {
+          max-width: 320px;
+          margin: 20px 0;
+          color: rgb(5, 108, 155);
+          font-size: 12px;
+        }
+        .btn {
+          color: white;
+          font-size: smaller;
+          padding: 7px 26px;
+          border: none;
+          border-radius: 30px;
+          &.try {
+            background: linear-gradient(
+              to left,
+              rgb(255, 101, 108),
+              50%,
+              rgb(211, 64, 109),
+              100%,
+              rgb(151, 31, 101)
+            );
+            &:hover {
+              box-shadow: 0 5px 10px 5px rgba(255, 101, 109, 0.2);
+            }
+          }
+          &.more {
+            margin-left: 15px;
+            background: linear-gradient(
+              to right,
+              rgb(3, 159, 203),
+              50%,
+              rgb(15, 103, 154),
+              100%,
+              rgb(32, 63, 132)
+            );
+            &:hover {
+              box-shadow: 0 5px 10px 5px rgba(rgb(3, 159, 203), 0.2);
+            }
+          }
+        }
+      }
+      .right {
+        text-align: end;
+        img {
+          width: 66%;
+        }
+      }
+    }
+  }
 }

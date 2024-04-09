@@ -21,10 +21,6 @@ export default {
       return this.socials.logos;
     },
   },
-  mounted() {
-    console.log(footerMenu);
-    console.log(socials);
-  },
 };
 </script>
 
