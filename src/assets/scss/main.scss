@@ -86,12 +86,17 @@ body {
       flex-flow: column;
       align-items: center;
       justify-content: space-between;
+      // Top section
       .top {
         text-align: center;
         p:first-child {
           color: rgb(250, 128, 134);
         }
+        p:last-child {
+          font-size: 13px;
+        }
       }
+      // Middle section
       .main {
         ul {
           display: flex;
@@ -165,6 +170,7 @@ body {
           }
         }
       }
+      // Bottom section
       .bottom {
         div {
           .btn {
