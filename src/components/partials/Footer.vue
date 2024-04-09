@@ -14,24 +14,24 @@ export default {};
       </div>
 
       <div class="right col-8">
-        <ul>
+        <!-- <ul>
           <li>Quick Links</li>
           <li><a href="">Services</a></li>
           <li><a href="">Contact</a></li>
           <li><a href="">Blog</a></li>
-        </ul>
+        </ul> -->
 
         <ul>
-          <li>Resources</li>
+          <!-- <li>Resources</li>
           <li><a href="">Art Design</a></li>
           <li><a href="">Computer</a></li>
           <li><a href="">IT News</a></li>
           <li><a href="">Networking</a></li>
-          <li><a href="">Web Security</a></li>
+          <li><a href="">Web Security</a></li> -->
         </ul>
 
         <ul>
-          <li>Contact Us</li>
+          <!-- <li>Contact Us</li>
           <li>
             <p>
               <span>Address: </span> Patricia C. Amedee 4401 Waldeck Street
@@ -43,7 +43,7 @@ export default {};
           </li>
           <li>
             <p><span>Email: </span>info@yourdomain.com</p>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -55,7 +55,7 @@ export default {};
 
       <div class="logos">
         <ul>
-          <li>
+          <!-- <li>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
           </li>
           <li>
@@ -66,7 +66,7 @@ export default {};
           </li>
           <li>
             <a href=""><i class="fa-brands fa-twitter"></i></a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
