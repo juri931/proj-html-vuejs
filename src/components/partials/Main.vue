@@ -3,7 +3,8 @@ export default {};
 </script>
 
 <template>
-  <section class="sect-1">
+  <!-- Jumbotron -->
+  <section class="jumbo">
     <div class="container">
       <div class="left">
         <h1>Business Planning</h1>
@@ -22,6 +23,35 @@ export default {};
       </div>
     </div>
   </section>
+  <!-- /Jumbotron -->
+
+  <!-- What We Do -->
+  <section class="what-we-do">
+    <div class="container wrapper">
+      <div class="top">
+        <p>Our Services</p>
+        <h1><strong>What</strong> We Do</h1>
+        <p>When, while the lovely valley teems with vapour around meand the</p>
+      </div>
+
+      <div class="main container">
+        <!-- TODO: remove style -->
+        <ul style="font-size: 60px; list-style: none">
+          <div>CARD</div>
+          <div>CARD</div>
+          <div>CARD</div>
+          <div>CARD</div>
+        </ul>
+      </div>
+
+      <div class="bottom">
+        <div class="container">
+          <div class="btn">View All Services</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /What We Do -->
 </template>
 
 <style lang="scss" scoped>

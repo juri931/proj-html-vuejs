@@ -30,7 +30,7 @@ export default {
       <div class="left col-4">
         <img src="/public/img/white-logo-2.png" alt="Logo" />
         <p>
-          When, while lovely valley teems vapour aroundmeand meridian sun
+          When, while lovely valley teems vapour around meand meridian sun
           strikes the upper impenetrable
         </p>
       </div>

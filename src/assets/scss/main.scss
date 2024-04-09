@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
-  .sect-1 {
+  // Jumbotron
+  .jumbo {
     display: flex;
     background: linear-gradient(
       to bottom,
@@ -71,6 +72,27 @@ body {
         img {
           width: 66%;
         }
+      }
+    }
+  }
+  // What We Do
+  .what-we-do {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    .wrapper {
+      display: flex;
+      height: 90%;
+      flex-flow: column;
+      align-items: center;
+      justify-content: space-between;
+      .top {
+        text-align: center;
+        p:first-child {
+          color: rgb(250, 128, 134);
+        }
+      }
+      .main {
       }
     }
   }
