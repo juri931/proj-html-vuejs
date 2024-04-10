@@ -70,6 +70,29 @@ export default {
     </div>
   </section>
   <!-- /What We Do -->
+
+  <!-- Grow Your Business -->
+  <section class="planning">
+    <div class="container">
+      <div class="image">
+        <img class="primary" src="/img/men-data.png" alt="" />
+      </div>
+
+      <div class="text">
+        <p>Start Your Project</p>
+        <h1>Grow Your Business</h1>
+        <h2>With Our Strategy</h2>
+        <p>
+          When, while the lovely valley teems with vapour around meand the
+          meridian sun strikes the upper surface. of the impenetrable foliage of
+          my trees, and but a few stray gleams steal into the inner sanctuary.
+        </p>
+        <div class="btn try">Try it Now</div>
+        <div class="btn more">Explore More</div>
+      </div>
+    </div>
+  </section>
+  <!-- /Grow Your Business -->
 </template>
 
 <style lang="scss" scoped>
