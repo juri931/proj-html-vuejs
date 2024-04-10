@@ -1,14 +1,19 @@
 <script>
 import { card } from "../../assets/data/cards";
+import { carousel } from "../../assets/data/carousel";
 export default {
   data() {
     return {
       card,
+      carousel,
     };
   },
   computed: {
     cardProps() {
       return card.props;
+    },
+    carouselProps() {
+      return carousel.props;
     },
   },
 };
@@ -93,6 +98,22 @@ export default {
     </div>
   </section>
   <!-- /Grow Your Business -->
+
+  <!-- Portfolio -->
+  <section class="portfolio">
+    <div
+      style="
+        height: 400px;
+        text-align: center;
+        line-height: 400px;
+        font-size: 50px;
+      "
+      class="container"
+    >
+      SLIDER
+    </div>
+  </section>
+  <!-- /Portfolio -->
 </template>
 
 <style lang="scss" scoped>
