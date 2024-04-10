@@ -412,4 +412,78 @@ body {
       }
     }
   }
+  // Blog
+  .blog {
+    margin-bottom: 100px;
+    .top {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+      text-align: center;
+      p:first-child {
+        color: rgb(250, 128, 134);
+      }
+      p:last-child {
+        max-width: 500px;
+        font-size: 13px;
+      }
+    }
+    .main-cards {
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: center;
+      .card.row {
+        border: none;
+        display: flex;
+        justify-content: space-around;
+        .card {
+          position: relative;
+          height: 320px;
+          margin: 0 25px;
+          padding: 20px 50px;
+          width: 300px;
+          border-radius: 20px;
+          gap: 10px;
+          background: linear-gradient(
+            to top left,
+            rgb(10, 25, 82),
+            50%,
+            rgb(5, 10, 52),
+            100%,
+            rgb(0, 0, 17)
+          );
+          color: white;
+          .info {
+            margin-top: 20px;
+            display: flex;
+            color: lightgray;
+            i {
+              font-size: 0.2rem;
+              height: 1px;
+              line-height: 20px;
+              margin: 0 10px;
+            }
+          }
+          .title {
+            font-weight: bolder;
+          }
+          .desc {
+            color: lightgray;
+            display: flex;
+          }
+          button {
+            position: absolute;
+            bottom: 30px;
+            width: 120px;
+            height: max-content;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
 }

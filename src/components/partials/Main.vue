@@ -2,12 +2,14 @@
 import { card } from "../../assets/data/cards";
 import { carousel } from "../../assets/data/carousel";
 import { priceCard } from "../../assets/data/prices";
+import { posts } from "../../assets/data/posts";
 export default {
   data() {
     return {
       card,
       carousel,
       priceCard,
+      posts,
     };
   },
   computed: {
@@ -19,6 +21,9 @@ export default {
     },
     priceCardProps() {
       return priceCard.props;
+    },
+    postsProps() {
+      return posts.props;
     },
   },
 };
@@ -133,7 +138,7 @@ export default {
         </p>
       </div>
 
-      <!-- Middle Section -->
+      <!-- Cards -->
       <div class="main-card container">
         <ul>
           <div
@@ -164,6 +169,42 @@ export default {
     </div>
   </section>
   <!-- /Prices -->
+
+  <!-- Blog -->
+  <section class="blog">
+    <div class="container wrapper">
+      <!-- Top Section -->
+      <div class="top">
+        <p>Blog</p>
+        <h1><strong>Latest</strong> Posts</h1>
+        <p>
+          When, while the lovely valley teems with vapour around meand the
+          meridian sun strikes the uper surface.
+        </p>
+      </div>
+
+      <!-- Cards -->
+      <div class="main-cards container">
+        <div v-for="(item, index) in postsProps" :key="index" class="card row">
+          <div class="card">
+            <span class="info">
+              <p class="date">
+                {{ item.date }}
+              </p>
+              <i class="fa-solid fa-circle"></i>
+              <p class="name">by {{ item.name }}</p>
+            </span>
+            <h6 class="title">{{ item.title }}</h6>
+            <div class="desc">
+              <p class="text">{{ item.text }}...</p>
+            </div>
+            <button>Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Blog -->
 </template>
 
 <style lang="scss" scoped>
