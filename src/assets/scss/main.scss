@@ -435,11 +435,12 @@ body {
       display: flex;
       justify-content: center;
       .card.row {
+        position: relative;
         border: none;
         display: flex;
         justify-content: space-around;
         .card {
-          position: relative;
+          color: white;
           height: 320px;
           margin: 0 25px;
           padding: 20px 50px;
@@ -454,7 +455,6 @@ body {
             100%,
             rgb(0, 0, 17)
           );
-          color: white;
           .info {
             margin-top: 20px;
             display: flex;
@@ -481,6 +481,13 @@ body {
             padding: 5px 15px;
             border: none;
             border-radius: 20px;
+          }
+        }
+        &:hover {
+          width: 500px;
+          z-index: 99;
+          .card {
+            width: 100%;
           }
         }
       }

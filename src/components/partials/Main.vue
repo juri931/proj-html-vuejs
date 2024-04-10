@@ -186,7 +186,7 @@ export default {
       <!-- Cards -->
       <div class="main-cards container">
         <div v-for="(item, index) in postsProps" :key="index" class="card row">
-          <div class="card">
+          <div class="card" :style="`background-image: url(${item.img})`">
             <span class="info">
               <p class="date">
                 {{ item.date }}
