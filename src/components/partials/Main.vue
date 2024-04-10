@@ -134,27 +134,32 @@ export default {
       </div>
 
       <!-- Middle Section -->
-      <div class="main container">
+      <div class="main-card container">
         <ul>
           <div
             v-for="(item, index) in priceCardProps"
             :key="index"
             class="card row"
           >
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.desc }}</p>
-            <a class="btn" href="#">
-              <i class="fa fa-arrow-right"></i>
-            </a>
+            <div class="background">{{ item.price }}</div>
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.subtitle }}</p>
+            <p style="text-align: left; max-width: 100px; margin: 0">$</p>
+            <span class="price">{{ item.price }}</span>
+            <p class="month">Per Month</p>
+            <ul class="list">
+              <li><strong>Creative </strong>Design Enabled</li>
+              <li><strong>Vibrant </strong>Color Usage</li>
+              <li><strong>Eye </strong>Catching Design</li>
+              <li><strong>Extreme </strong>Typography</li>
+              <li><strong>Exceptional </strong>Design</li>
+            </ul>
+            <button href="#">
+              <span>Order Now</span>
+              <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </button>
           </div>
         </ul>
-      </div>
-
-      <!-- Bottom  Section -->
-      <div class="bottom">
-        <div class="container">
-          <div class="btn">View All Services</div>
-        </div>
       </div>
     </div>
   </section>
