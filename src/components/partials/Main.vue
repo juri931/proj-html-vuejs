@@ -1,11 +1,13 @@
 <script>
 import { card } from "../../assets/data/cards";
 import { carousel } from "../../assets/data/carousel";
+import { priceCard } from "../../assets/data/prices";
 export default {
   data() {
     return {
       card,
       carousel,
+      priceCard,
     };
   },
   computed: {
@@ -14,6 +16,9 @@ export default {
     },
     carouselProps() {
       return carousel.props;
+    },
+    priceCardProps() {
+      return priceCard.props;
     },
   },
 };
@@ -114,6 +119,46 @@ export default {
     </div>
   </section>
   <!-- /Portfolio -->
+
+  <!-- Prices -->
+  <section class="prices">
+    <div class="container wrapper">
+      <!-- Top Section -->
+      <div class="top">
+        <p>Price List</p>
+        <h1><strong>Our</strong> Pricing</h1>
+        <p>
+          When, while the lovely valley teems with vapour around meand the
+          meridian sun strikes the uper surface.
+        </p>
+      </div>
+
+      <!-- Middle Section -->
+      <div class="main container">
+        <ul>
+          <div
+            v-for="(item, index) in priceCardProps"
+            :key="index"
+            class="card row"
+          >
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.desc }}</p>
+            <a class="btn" href="#">
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </ul>
+      </div>
+
+      <!-- Bottom  Section -->
+      <div class="bottom">
+        <div class="container">
+          <div class="btn">View All Services</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Prices -->
 </template>
 
 <style lang="scss" scoped>
